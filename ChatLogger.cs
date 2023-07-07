@@ -5,11 +5,11 @@ using UnityEngine.UI;
 
 public class ChatLogger : MonoBehaviour
 {
-    public GameObject chatEntry;
-    List<GameObject> chatEntries = new List<GameObject>();
-    public Transform content;
+    [SerializeField] private GameObject chatEntry;
+    private List<GameObject> chatEntries = new List<GameObject>();
+    [SerializeField] private Transform content;
     public static ChatLogger Instance;
-    public InputField chatInputField;
+    [SerializeField] private InputField chatInputField;
 
     void Awake()
     {
